@@ -5,7 +5,7 @@ const Api = () => {
 
   const fetchData = async () => {
     try {
-      const response = await axios.get('https://jsonplaceholder.typicode.com/users');
+      const response = await axios.get('https://api.example.com/users');
       console.log(response.data);
       setUsers(response.data)
     } catch (error) {
